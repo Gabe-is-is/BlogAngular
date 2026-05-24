@@ -1,3 +1,15 @@
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .home-whywestarted {
   display: flex;
   justify-content: center;
@@ -8,10 +20,25 @@
   max-width: 1280px;
   padding: 0 80px;
 
+  @include mobile {
+    padding: 0 1.25rem;
+    margin-top: 64px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-top: 80px;
+  }
+
   img {
     width: 100%;
     max-width: 949px;
     display: block;
+
+    @include tablet {
+      max-width: 100%;
+    }
   }
 
   .home-whywestarted-card {
@@ -23,6 +50,17 @@
     background: white;
     padding: 64px;
 
+    @include mobile {
+      padding: 24px;
+      margin-top: -20px;
+    }
+
+    @include tablet {
+      margin-left: 0;
+      margin-top: -40px;
+      padding: 40px;
+    }
+
     h1 {
       color: var(--black);
       font-family: 'Inter', 'Sen', sans-serif;
@@ -30,6 +68,11 @@
       font-weight: 600;
       letter-spacing: 3px;
       margin-bottom: 24px;
+
+      @include mobile {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
     }
 
     h2 {
@@ -40,6 +83,16 @@
       letter-spacing: -2px;
       margin-bottom: 16px;
       width: 526px;
+
+      @include mobile {
+        font-size: 28px;
+      }
+
+      @include tablet {
+        width: 100%;
+        font-size: 38px;
+        line-height: 1.2;
+      }
     }
 
     h3 {
@@ -50,6 +103,15 @@
       line-height: 1.8;
       width: 546px;
       margin-bottom: 32px;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      @include tablet {
+        width: 100%;
+      }
     }
 
     button {
@@ -62,6 +124,17 @@
       height: 56px;
       border: none;
       cursor: pointer;
+
+      @include mobile {
+        width: 100%;
+        height: 52px;
+        font-size: 16px;
+      }
+
+      @include tablet {
+        width: 100%;
+        max-width: 270px;
+      }
 
       &:hover {
         background-color: var(--light);

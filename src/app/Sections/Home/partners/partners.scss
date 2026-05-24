@@ -1,3 +1,15 @@
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .home-features {
   display: flex;
   align-items: center;
@@ -7,11 +19,35 @@
   width: 100%;
   margin: 95px auto 0;
 
+  @include mobile {
+    margin-top: 64px;
+    padding-inline: 1.25rem;
+    gap: 24px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 80px;
+    padding-inline: 2rem;
+    text-align: center;
+  }
+
   ul {
     display: flex;
     align-items: center;
     gap: 75px;
     list-style: none;
+
+    @include mobile {
+      gap: 24px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
   }
 
   .home-features-text {
@@ -23,6 +59,10 @@
       font-size: 14px;
       font-weight: 400;
       opacity: 0.6;
+
+      @include mobile {
+        font-size: 13px;
+      }
     }
 
     h2 {
@@ -30,6 +70,10 @@
       font-family: 'Sen', 'Inter', sans-serif;
       font-size: 24px;
       font-weight: bold;
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
 }

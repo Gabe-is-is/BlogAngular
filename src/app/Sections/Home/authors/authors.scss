@@ -1,73 +1,142 @@
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .home-listofauthors {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   max-width: 1280px;
   width: 100%;
-
   margin: 128px auto 0;
 
-  .home-listofauthors-text h1 {
-    color: var(--black);
-    font-family: 'Sen', 'Inter', sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    margin-bottom: 48px;
+  @include tablet {
+    margin-top: 80px;
+    padding-inline: 2rem;
+  }
+
+  @include mobile {
+    margin-top: 64px;
+    padding-inline: 1.25rem;
+  }
+
+  .home-listofauthors-text {
+
+    h1 {
+      color: var(--black);
+      font-family: 'Sen', 'Inter', sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      margin-bottom: 48px;
+
+      @include tablet {
+        margin-bottom: 32px;
+        text-align: center;
+      }
+
+      @include mobile {
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
+    }
   }
 
   .home-listofauthors-authors {
     display: flex;
+
+    @include tablet {
+      width: 100%;
+    }
 
     ul {
       display: flex;
       list-style: none;
       align-items: stretch;
       gap: 32px;
+
+      @include tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+      }
+
+      @include mobile {
+        gap: 16px;
+      }
+
+      .home-listofauthors-authors-author {
+        background-color: var(--lavender);
+        width: 296px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+
+        @include mobile {
+          padding: 18px;
+        }
+
+        @include tablet {
+          width: 100%;
+          max-width: 320px;
+        }
+
+        &:hover {
+          background-color: var(--light-yellow);
+        }
+
+        img {
+          margin-bottom: 20px;
+        }
+
+        h1 {
+          color: var(--black);
+          font-family: 'Sen', 'Inter', sans-serif;
+          font-size: 28px;
+          font-weight: bold;
+          letter-spacing: -1px;
+          margin-bottom: 8px;
+
+          @include mobile {
+            font-size: 24px;
+          }
+        }
+
+        p {
+          color: var(--medium-grey);
+          font-family: 'Inter', 'Sen', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 20px;
+
+          @include mobile {
+            font-size: 13px;
+          }
+        }
+
+        .home-listofauthors-authors-social {
+          align-items: center;
+          display: flex;
+          gap: 16px;
+          margin-top: auto;
+          justify-content: center;
+
+          @include mobile {
+            gap: 12px;
+          }
+        }
+      }
     }
   }
 
-  .home-listofauthors-authors-author {
-    background-color: var(--lavender);
-    width: 296px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-
-    img {
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      color: var(--black);
-      font-family: 'Sen', 'Inter', sans-serif;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: -1px;
-      margin-bottom: 8px;
-    }
-
-    p {
-      color: var(--medium-grey);
-      font-family: 'Inter', 'Sen', sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-
-    &:hover {
-      background-color: var(--light-yellow);
-    }
-  }
-
-  .home-listofauthors-authors-social {
-    align-items: center;
-    display: flex;
-    gap: 16px;
-    margin-top: auto;
-    justify-content: center;
-  }
 }
