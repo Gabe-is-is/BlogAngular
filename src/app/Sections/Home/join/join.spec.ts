@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeroSection } from './hero-section';
+import { Join } from './join';
 
-describe('HeroSection', () => {
-  let component: HeroSection;
-  let fixture: ComponentFixture<HeroSection>;
+describe('Join', () => {
+  let component: Join;
+  let fixture: ComponentFixture<Join>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeroSection],
+      imports: [Join],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeroSection);
+    fixture = TestBed.createComponent(Join);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

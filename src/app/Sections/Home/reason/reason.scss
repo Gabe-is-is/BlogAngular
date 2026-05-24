@@ -1,0 +1,71 @@
+.home-whywestarted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  margin: 128px auto 0;
+  max-width: 1280px;
+  padding: 0 80px;
+
+  img {
+    width: 100%;
+    max-width: 949px;
+    display: block;
+  }
+
+  .home-whywestarted-card {
+    max-width: 706px;
+    width: 100%;
+    position: relative;
+    margin-top: 172px;
+    margin-left: -380px;
+    background: white;
+    padding: 64px;
+
+    h1 {
+      color: var(--black);
+      font-family: 'Inter', 'Sen', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      color: var(--black);
+      font-family: 'Sen', 'Inter', sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      margin-bottom: 16px;
+      width: 526px;
+    }
+
+    h3 {
+      color: var(--medium-grey);
+      font-family: 'Inter', 'Sen', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.8;
+      width: 546px;
+      margin-bottom: 32px;
+    }
+
+    button {
+      background-color: var(--yellow);
+      color: var(--black);
+      font-family: 'Sen', 'Inter', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      width: 270px;
+      height: 56px;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--light);
+      }
+    }
+  }
+}

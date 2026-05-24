@@ -1,0 +1,115 @@
+.home-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 128px;
+
+  .home-card-container-blocks {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .home-card-container-blocks-yellow-block {
+    background-color: var(--yellow);
+    width: 843px;
+    height: 23px;
+  }
+
+  .home-card-container-blocks-purple-block {
+    background-color: var(--purple);
+    width: 282px;
+    height: 23px;
+  }
+
+  .home-card-container-containers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 61px;
+
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 500px;
+    background-color: var(--lavender);
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  .home-card-container-aboutus {
+    width: 515px;
+
+    h1 {
+      color: var(--black);
+      font-family: 'Inter', 'Sen', sans-serif;
+      font-size: 16px;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      color: var(--black);
+      font-family: 'Sen', 'Inter', sans-serif;
+      font-size: 36px;
+      letter-spacing: -2px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      width: 490px;
+      line-height: 1.3;
+    }
+
+    h3 {
+      color: var(--medium-grey);
+      font-family: 'Inter', 'Sen', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    h4 {
+      font-family: 'Sen', 'Inter', sans-serif;
+      color: var(--purple);
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.home-card-container-ourmission {
+  width: 516px;
+
+  h1 {
+    color: var(--black);
+    font-family: 'Inter', 'Sen', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    color: var(--black);
+    font-family: 'Sen', 'Inter', sans-serif;
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    width: 494px;
+  }
+
+  h3 {
+    color: var(--medium-grey);
+    font-family: 'Inter', 'Sen', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}

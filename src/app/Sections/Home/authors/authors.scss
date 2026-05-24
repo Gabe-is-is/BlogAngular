@@ -1,0 +1,73 @@
+.home-listofauthors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1280px;
+  width: 100%;
+
+  margin: 128px auto 0;
+
+  .home-listofauthors-text h1 {
+    color: var(--black);
+    font-family: 'Sen', 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 48px;
+  }
+
+  .home-listofauthors-authors {
+    display: flex;
+
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: stretch;
+      gap: 32px;
+    }
+  }
+
+  .home-listofauthors-authors-author {
+    background-color: var(--lavender);
+    width: 296px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: var(--black);
+      font-family: 'Sen', 'Inter', sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--medium-grey);
+      font-family: 'Inter', 'Sen', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      background-color: var(--light-yellow);
+    }
+  }
+
+  .home-listofauthors-authors-social {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    margin-top: auto;
+    justify-content: center;
+  }
+}
