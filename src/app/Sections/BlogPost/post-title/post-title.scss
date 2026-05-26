@@ -1,0 +1,64 @@
+.blog-post-andrew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 128px;
+}
+
+.blog-post-andrew-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.blog-post-andrew-post-container-1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-andrew-post-container-1-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-andrew-post h1 {
+  color: var(--purple);
+  font-family: 'Sen', 'Inter', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.blog-post-andrew-post h2 {
+  color: var(--medium-grey);
+  font-family: 'Inter', 'Sen', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.blog-post-andrew-post h3 {
+  color: var(--black);
+  font-family: 'Sen', 'Inter', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  font-weight: bold;
+  margin-bottom: 2.125rem;
+  max-width: 568px;
+  width: 100%;
+}
+
+.blog-post-andrew-post h4 {
+  color: var(--black);
+  font-family: 'Sen', 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.blog-post-andrew-post-container-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
