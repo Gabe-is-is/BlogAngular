@@ -1,0 +1,49 @@
+.aboutus-cards-2 {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aboutus-cards-2 img {
+  display: block;
+  width: 100%;
+}
+
+.aboutus-cards-2-text {
+  background-color: var(--lavender);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 80rem;
+  width: 100%;
+  padding: 8rem 6.75rem 4rem 6.75rem;
+
+  h1 {
+    color: var(--black);
+    font-family: 'Inter', 'Sen', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    color: var(--black);
+    font-family: 'Sen', 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    max-width: 29.6875rem;
+    width: 100%;
+  }
+
+  h3 {
+    color: var(--medium-grey);
+    font-family: 'Inter', 'Sen', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 32px;
+  }
+}

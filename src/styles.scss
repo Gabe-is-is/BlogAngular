@@ -16,3 +16,18 @@
   --lavender: #f4f0f8;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+}
