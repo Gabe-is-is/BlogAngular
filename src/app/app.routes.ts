@@ -5,6 +5,8 @@ import { Blog } from './pages/blog/blog';
 import { AboutUs } from './pages/about-us/about-us';
 import { Category } from './pages/category/category';
 import { Contact } from './pages/contact/contact';
+import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
+import { Author } from './pages/author/author';
 
 export const routes: Routes = [
   {
@@ -28,7 +30,15 @@ export const routes: Routes = [
     component: Category
   },
   {
+    path: 'author',
+    component: Author
+  },
+  {
     path: 'contact',
     component: Contact
+  },
+  {
+    path: 'privacypolicy',
+    component: PrivacyPolicy
   }
 ];
